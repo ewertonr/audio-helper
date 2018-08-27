@@ -1,5 +1,4 @@
-﻿using AudioHelper.Domain.Contract;
-using AudioHelper.Infrastructure.Mp3;
+﻿using AudioHelper.Infrastructure.Mp3;
 using System;
 using System.IO;
 

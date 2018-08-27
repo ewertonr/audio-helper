@@ -1,5 +1,4 @@
-﻿using AudioHelper.Domain.Contract;
-using NAudio.Wave;
+﻿using NAudio.Wave;
 using System;
 
 namespace AudioHelper.Infrastructure.Mp3

@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AudioHelper.Domain.Contract\AudioHelper.Domain.Contract.csproj" />
     <ProjectReference Include="..\AudioHelper.Infrastructure\AudioHelper.Infrastructure.csproj" />
   </ItemGroup>
 

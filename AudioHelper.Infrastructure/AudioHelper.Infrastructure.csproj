@@ -8,8 +8,4 @@
     <PackageReference Include="NAudio" Version="1.8.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AudioHelper.Domain.Contract\AudioHelper.Domain.Contract.csproj" />
-  </ItemGroup>
-
 </Project>

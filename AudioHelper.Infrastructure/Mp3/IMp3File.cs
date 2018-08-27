@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AudioHelper.Domain.Contract
+namespace AudioHelper.Infrastructure.Mp3
 {
 	public interface IMp3File : IDisposable
 	{
