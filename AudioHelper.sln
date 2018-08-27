@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHelper", "AudioHelper\AudioHelper.csproj", "{CA830999-B8EB-423D-9B5F-6475A38B06D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHelper.Domain", "AudioHelper.Domain\AudioHelper.Domain.csproj", "{9C57E3DD-E74A-4842-8A25-C56E92518B87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHelper.Tests", "AudioHelper.Tests\AudioHelper.Tests.csproj", "{5026CD2B-F69D-4D7A-9D32-7BC172412DE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHelper.Infrastructure", "AudioHelper.Infrastructure\AudioHelper.Infrastructure.csproj", "{C03873C4-964E-463A-9D41-B5B5F07E6C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHelper.Domain.Contract", "AudioHelper.Domain.Contract\AudioHelper.Domain.Contract.csproj", "{50486DBB-6A4E-4D56-8045-35D67B332F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioHelper.Presentation", "AudioHelper.Presentation\AudioHelper.Presentation.csproj", "{03B1A2F2-EA5B-444C-B20B-A7E32F210747}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA830999-B8EB-423D-9B5F-6475A38B06D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA830999-B8EB-423D-9B5F-6475A38B06D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA830999-B8EB-423D-9B5F-6475A38B06D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA830999-B8EB-423D-9B5F-6475A38B06D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5026CD2B-F69D-4D7A-9D32-7BC172412DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5026CD2B-F69D-4D7A-9D32-7BC172412DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5026CD2B-F69D-4D7A-9D32-7BC172412DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5026CD2B-F69D-4D7A-9D32-7BC172412DE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C57E3DD-E74A-4842-8A25-C56E92518B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C57E3DD-E74A-4842-8A25-C56E92518B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C57E3DD-E74A-4842-8A25-C56E92518B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C57E3DD-E74A-4842-8A25-C56E92518B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03873C4-964E-463A-9D41-B5B5F07E6C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03873C4-964E-463A-9D41-B5B5F07E6C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03873C4-964E-463A-9D41-B5B5F07E6C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03873C4-964E-463A-9D41-B5B5F07E6C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50486DBB-6A4E-4D56-8045-35D67B332F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50486DBB-6A4E-4D56-8045-35D67B332F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50486DBB-6A4E-4D56-8045-35D67B332F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50486DBB-6A4E-4D56-8045-35D67B332F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B1A2F2-EA5B-444C-B20B-A7E32F210747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B1A2F2-EA5B-444C-B20B-A7E32F210747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B1A2F2-EA5B-444C-B20B-A7E32F210747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B1A2F2-EA5B-444C-B20B-A7E32F210747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
