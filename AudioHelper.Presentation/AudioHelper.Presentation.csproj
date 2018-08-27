@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AudioHelper.Domain\AudioHelper.Domain.csproj" />
+    <ProjectReference Include="..\AudioHelper.Infrastructure\AudioHelper.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
