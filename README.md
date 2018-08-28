@@ -1,4 +1,4 @@
-# audio-helper
+# audio-helper [![Build Status](https://travis-ci.org/ewertonr/audio-helper.svg?branch=master)](https://travis-ci.org/ewertonr/audio-helper)
 
 To generate small mp3 files, you must write a txt file following this template:
 
