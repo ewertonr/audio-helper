@@ -1,6 +1,5 @@
 # audio-helper
 
-### input
 To generate small mp3 files, you must write a txt file following this template:
 
 ```{hours}:{minuts}:{seconds} - {song title}```
@@ -15,7 +14,7 @@ Example:
 
 Also, you must have the MP3 file with the entire song and pass it as parameter.
 
-### output
+### Example:
 
 ```sh
 $ .exe "C:\audio-helper\songs.txt" "C:\audio-helper\dvd-raca-negra.mp3" 
