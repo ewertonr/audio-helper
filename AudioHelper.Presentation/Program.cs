@@ -11,9 +11,7 @@ namespace AudioHelper.Presentation
 			try
 			{
 				var factory = new SongFactory(new FileSystem());
-
-				factory.ReadFile(@"C:\test_aud\musics.txt", @"C:\test_aud\vou_pro_sereno.mp3");
-				factory.GenerateSongs();
+				factory.ReadFileAndGenerateSongs(@"C:\test_aud\musics.txt", @"C:\test_aud\vou_pro_sereno.mp3");
 
 				Console.WriteLine("Hello World!");
 				Console.ReadKey();

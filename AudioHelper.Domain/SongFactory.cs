@@ -1,6 +1,7 @@
 ﻿using AudioHelper.Infrastructure.FileSystem;
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace AudioHelper.Domain
 {
@@ -16,7 +17,13 @@ namespace AudioHelper.Domain
 
 		private readonly ICollection<Song> Songs = new List<Song>();
 
-		public void ReadFile(string path, string mp3FilePath)
+		public void ReadFileAndGenerateSongs(string path, string mp3FilePath)
+		{
+			this.ReadFile(path, mp3FilePath);
+			this.GenerateSongs();
+		}
+
+		private void ReadFile(string path, string mp3FilePath)
 		{
 			this.mp3FilePath = path;
 
@@ -40,16 +47,16 @@ namespace AudioHelper.Domain
 			}
 		}
 
-		public void GenerateSongs()
+		private void GenerateSongs()
 		{
 			if (this.Songs.Count == 0) { throw new Exception("Não há nenhuma música para ser gerada. Verifique e tente novamente."); }
 
 			var outputDirectory = $@"{this.fileSystem.DirectoryName(this.mp3FilePath)}\cd\";
 			this.fileSystem.CreateDirectory(outputDirectory);
 
-			foreach (var music in this.Songs)
+			foreach (var song in this.Songs)
 			{
-				music.GenerateMp3(outputDirectory);
+				song.GenerateMp3(this.fileSystem, outputDirectory);
 			}
 
 			this.Songs.Clear();
