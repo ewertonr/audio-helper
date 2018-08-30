@@ -1,4 +1,6 @@
-﻿namespace AudioHelper.Infrastructure.FileSystem
+﻿using System.IO;
+
+namespace AudioHelper.Infrastructure.FileSystem
 {
 	public interface IFileSystemWrapper
     {
@@ -7,5 +9,7 @@
 		string DirectoryName(string filePath);
 
 		string[] ReadAllLines(string path);
+
+		FileStream FileWriter(string path);
 	}
 }

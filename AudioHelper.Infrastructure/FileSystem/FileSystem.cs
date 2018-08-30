@@ -9,5 +9,7 @@ namespace AudioHelper.Infrastructure.FileSystem
 		public string DirectoryName(string filePath) => new FileInfo(filePath).Directory.FullName;
 
 		public string[] ReadAllLines(string path) => File.ReadAllLines(path);
+
+		public FileStream FileWriter(string path) => File.Create(path);
 	}
 }

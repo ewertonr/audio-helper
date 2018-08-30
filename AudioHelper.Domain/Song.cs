@@ -1,6 +1,6 @@
-﻿using AudioHelper.Infrastructure.Mp3;
+﻿using AudioHelper.Infrastructure.FileSystem;
+using AudioHelper.Infrastructure.Mp3;
 using System;
-using System.IO;
 
 namespace AudioHelper.Domain
 {
@@ -12,12 +12,9 @@ namespace AudioHelper.Domain
 		{
 			this.mp3File = new Mp3File(mp3Path);
 
-			this.Title = $"{order} - {title}.mp3";
-
+			this.End = end == TimeSpan.Zero ? this.mp3File.TotalTime : end;
 			this.Start = start;
-			this.End = end == TimeSpan.Zero
-				? this.mp3File.TotalTime
-				: end;
+			this.Title = $"{order} - {title}.mp3";
 		}
 
 		private string Title { get; }
@@ -32,9 +29,9 @@ namespace AudioHelper.Domain
 
 		private bool IsInInterval => this.CurrentTime >= this.Start && this.CurrentTime <= this.End;
 
-		public void GenerateMp3(string path)
+		public void GenerateMp3(IFileSystemWrapper fileSystem, string path)
 		{
-			using (var writer = File.Create($@"{path}\{this.Title}"))
+			using (var writer = fileSystem.FileWriter($@"{path}\{this.Title}"))
 			{
 				byte[] frame = null;
 				while ((frame = this.RawData) != null)
