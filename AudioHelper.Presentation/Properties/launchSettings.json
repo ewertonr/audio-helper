@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AudioHelper.Presentation": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\test_aud\\musics.txt\" \"C:\\test_aud\\vou_pro_sereno.mp3\""
+    }
+  }
+}
